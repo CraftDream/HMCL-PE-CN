@@ -151,9 +151,6 @@ public class AddAuthlibInjectorAccountDialog extends Dialog implements View.OnCl
                                     }
                                     else {
                                         String u = texture.getUrl();
-                                        if (!u.startsWith("https")){
-                                            u = u.replaceFirst("http","https");
-                                        }
                                         URL url = new URL(u);
                                         HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                                         httpURLConnection.setDoInput(true);
@@ -192,9 +189,6 @@ public class AddAuthlibInjectorAccountDialog extends Dialog implements View.OnCl
                                 }
                                 else {
                                     String u = texture.getUrl();
-                                    if (!u.startsWith("https")){
-                                        u = u.replaceFirst("http","https");
-                                    }
                                     URL url = new URL(u);
                                     HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                                     httpURLConnection.setDoInput(true);
